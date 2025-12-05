@@ -1,0 +1,37 @@
+[
+    {
+        "username": "alip",
+        "password": "$2y$10$xekRTU5gXyZOyxC47mh4\/.Lwntu.l7amlhplus9d\/4X.mZyHzUg\/q",
+        "created_at": "2025-11-22T02:18:05+00:00"
+    },
+    {
+        "username": "yusuf",
+        "password": "$2y$10$Uxg7lh8oo30UmFVvkv\/Kduuw0.4k9Xp64lMeXhOO018wl1hRrp9EO",
+        "role": "chef",
+        "created_at": "2025-11-22T03:43:52+00:00"
+    },
+    {
+        "username": "Acho",
+        "password": "$2y$10$xwVjNmInSYopGsvsuRlSPerQ\/By2Zbvc0UCliMeKrFe60.G.aqpDK",
+        "role": "gojek",
+        "created_at": "2025-11-22T03:50:05+00:00"
+    },
+    {
+        "username": "Kholid",
+        "password": "$2y$10$Cy.NEQ0\/ZBgKL9Lk1m9bveWwCCvpO5cMYrY6vrDK31FQ.rWn4TyIS",
+        "role": "gojek",
+        "created_at": "2025-11-22T04:30:23+00:00"
+    },
+    {
+        "username": "Akbar",
+        "password": "$2y$10$78fjtF21cvplgAu7vqF4Se2yaqgHR7cSx3HcdK9TmvMGsqCpdystu",
+        "role": "gojek",
+        "created_at": "2025-11-22T05:06:21+00:00"
+    },
+    {
+        "username": "Yunitha",
+        "password": "$2y$10$0z6MFJ3uTn96iDrnzynu6uG7D9Vlkl7zyt6IEu4AnB0gK9YlIrXvm",
+        "role": "chef",
+        "created_at": "2025-11-22T06:00:08+00:00"
+    }
+]

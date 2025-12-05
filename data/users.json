@@ -1,0 +1,61 @@
+[
+    {
+        "full_name": "ari",
+        "phone": "865434544535",
+        "email": "alif@gmail.com",
+        "password": "$2y$10$Yosu5amBfleGvVnrmD7GOOcG8B6CP2gLT7GybdxW0vgHkDKD10fsq",
+        "created_at": "2025-11-19T12:52:41+00:00"
+    },
+    {
+        "full_name": "Ali",
+        "phone": "082568956",
+        "email": "Ali@gmail.com",
+        "password": "$2y$10$T1iTVcjX4jKi7YIGsFEJiuFRRR36mHav0NdDaV5Zwc3mAGBCHlFhK",
+        "created_at": "2025-11-19T13:33:57+00:00"
+    },
+    {
+        "full_name": "kholid",
+        "phone": "081366037362",
+        "email": "kholidmsy@gmail.com",
+        "password": "$2y$10$F7MinwY0sagn4DK3EMfb\/O0DLmeNBJPd34dvQE6s1mawK6O1bQjbu",
+        "created_at": "2025-11-19T23:38:38+00:00"
+    },
+    {
+        "full_name": "Ansari",
+        "phone": "+62-089876544",
+        "email": "Ansariramadhan@gamil.com",
+        "password": "$2y$10$phLWmyhfH0r46KyeE5KJy.2iMVkctMExMZLazmj2nLBWPdFe3ncdi",
+        "created_at": "2025-11-19T23:53:04+00:00",
+        "selected_avatar_index": 6
+    },
+    {
+        "full_name": "Hafiza",
+        "phone": "+62-081234575",
+        "email": "Fiza@gmail.com",
+        "password": "$2y$10$q4\/Yc1ZZM4ZHfJYEEhzbN.qrarZtfe82w1jDtY2fSyGK0piAc5Z2S",
+        "created_at": "2025-11-20T02:24:02+00:00",
+        "selected_avatar_index": 1
+    },
+    {
+        "full_name": "Alip",
+        "phone": "081366037362",
+        "email": "alifprendje@gmail.com",
+        "password": "$2y$10$lW7yNEgVZSTr8pAKcY2udOmteSpxZkKiEl7DEMtDFYV71.HcqnIlC",
+        "created_at": "2025-11-22T06:03:55+00:00"
+    },
+    {
+        "full_name": "Inayah",
+        "phone": "089999999",
+        "email": "nuthela1@gmail.com",
+        "password": "$2y$10$XEqqXkbLM4mJ4F91YaGBk.9FEHbvtbBu4jXydlkuwDiAuXGqblnty",
+        "created_at": "2025-11-22T12:41:04+00:00"
+    },
+    {
+        "full_name": "RAYA",
+        "phone": "865434544535",
+        "email": "Raya@gmail.com",
+        "password": "$2y$10$cfvO2KCY2ydbUjeVoQAWE.CCxrtuMfnxMNuf14PtGZ8P2cGEivBiO",
+        "created_at": "2025-11-22T13:35:59+00:00",
+        "selected_avatar_index": 1
+    }
+]

@@ -1,0 +1,1140 @@
+/* Variabel Warna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root {
+    --rajan-orange: #FF8C00; /* Warna Oranye utama */
+    --navbar-bg: white;
+    --text-dark: #333;
+    --divider-color: #FF8C00;
+    --discount-text{
+        font-family: 'Poppins', sans-serif;
+    }
+    
+}
+
+/* Penataan Kontainer Utama Navbar */
+.navbar-rajan {
+    display: flex;
+    justify-content: space-between; /* Memisah kiri dan kanan */
+    align-items: center;
+    background-color: var(--navbar-bg);
+    padding: 15px 30px; /* Padding yang lebih tebal */
+    max-width: 1200px; /* Batasi lebar untuk tampilan desktop yang rapi */
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd; /* Garis bawah tipis */
+}
+
+/* 1. Bagian Kiri (Logo dan Judul) */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 35px; /* Ukuran logo mahkota */
+    height: 35px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.welcome-text {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.brand-name {
+    color: var(--rajan-orange);
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+/* 2. Bagian Kanan (Tautan, Pemisah, dan User) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Jarak default antar elemen */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.9em;
+    padding-bottom: 5px; /* Untuk penempatan garis bawah */
+}
+.nav-link:hover {
+    color: var(--rajan-orange);
+    transition: 0.3s ease;
+}
+
+.nav-link.cta {
+    background-color: var(--rajan-orange);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.nav-link.cta:hover {
+    background-color: #e57e00;
+    color: #fff;
+}
+
+
+/* Tautan Aktif (Home) */
+.nav-link.active {
+    font-weight: 500;
+    border-bottom: 2px solid var(--rajan-orange); /* Garis bawah oranye */
+}
+
+/* Tautan Sign Out */
+.nav-link.sign-out {
+    color: var(--rajan-orange);
+    font-weight: 500;
+}
+
+/* Pemisah Vertikal */
+.vertical-divider {
+    height: 30px; /* Tinggi pemisah */
+    width: 2px; /* Ketebalan pemisah */
+    background-color: var(--divider-color);
+    margin: 0 10px;
+    opacity: 0.7;
+}
+
+/* Profil Pengguna */
+.user-profile {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.user-profile:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.user-profile:active {
+    transform: scale(0.98);
+}
+
+.user-name {
+    color: var(--text-dark);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Penataan Kontainer Hero Banner */
+.hero-banner {
+    /* Ganti 'martabak-banner-bg.jpg' dengan nama file gambar Anda */
+    background: url('img/unnamed.jpg') center/cover no-repeat;
+    height: 400px; /* Atur tinggi banner sesuai kebutuhan */
+    
+    /* Mengatur Flexbox untuk menengahkan konten (discount-overlay) */
+    display: flex;
+    justify-content: center; /* Tengah horizontal */
+    align-items: center; /* Tengah vertikal */
+}
+
+/* Overlay Konten Diskon */
+.discount-overlay {
+    text-align: center;
+    color: white;
+    /* Memberikan latar belakang sedikit transparan pada teks agar lebih terbaca */
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.discount-text {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    /* Memberikan efek outline/shadow tipis agar terlihat timbul */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.promo-detail {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    max-width: 400px; /* Batasi lebar teks detail */
+    line-height: 1.5;
+}
+
+/* Tombol Aksi */
+.buy-now-btn {
+    background-color: var(--rajan-orange);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-now-btn:hover {
+    transform: scale(1.05);
+    background-color: #e57e00;
+    transition: 0.3s ease;
+}
+
+:root {
+    --rajan-orange: #FF8C00;
+    --light-bg: #F9F9F9;
+    --text-dark: #333;
+    --text-grey: #666;
+}
+
+/* Penataan Kontainer Utama */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 25px; /* Jarak antara Menu dan Sidebar */
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* 1. Konten Kiri: Daftar Menu (.menu-content) */
+.menu-content {
+    flex: 3; /* Area menu lebih lebar (sekitar 70-75%) */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Item Menu Tunggal */
+.menu-item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+} 
+.menu-item-card:hover {
+    background: #fff7ed; /* sedikit oranye muda */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+
+.item-left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.item-img:hover,
+.thumb-img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+
+
+.item-details {
+    /* Detail Nama, Lokasi, Waktu */
+    max-width: 250px;
+}
+
+.item-name {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.item-location, .item-time {
+    font-size: 0.8em;
+    color: var(--text-grey);
+    margin: 5px 0;
+}
+
+.show-card-link {
+    font-size: 0.8em;
+    color: var(--text-dark);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.item-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.action-btn {
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.pesan-btn {
+    background-color: var(--rajan-orange);
+    color: white;
+    border: none;
+}
+
+.beli-btn {
+    background-color: white;
+    color: var(--text-dark);
+    border: 1px solid #ccc;
+}
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.pesan-btn:hover {
+    background-color: #ffffff;
+    color:#333
+}
+
+.beli-btn:hover {
+    border-color: var(--rajan-orange);
+    color: var(--rajan-orange);
+}
+
+
+.separator-icon {
+    font-size: 1.5em;
+    color: #999;
+}
+
+.item-right {
+    display: flex;
+    gap: 5px;
+}
+
+.thumb-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+/* 2. Konten Kanan: Sidebar (.sidebar) */
+.sidebar {
+    flex: 1; /* Area sidebar lebih sempit (sekitar 25-30%) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Box Your Savings */
+.savings-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.savings-title {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--text-dark);
+}
+
+.discount-label {
+    background-color: var(--rajan-orange);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Box Locations dan Websites */
+.locations-box, .websites-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.savings-box:hover,
+.locations-box:hover,
+.websites-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+
+.sidebar-subtitle {
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: var(--rajan-orange);
+}
+
+.locations-box p {
+    font-size: 0.85em;
+    margin: 8px 0;
+    line-height: 1.4;
+    color: var(--text-grey);
+}
+
+/* Item Website */
+.website-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.website-item:hover {
+    background-color: #fff7ed;
+    padding-left: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+
+.website-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.website-details {
+    flex-grow: 1;
+}
+
+.website-name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.website-status {
+    font-size: 0.75em;
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+}
+.website-status:hover {
+    color: var(--rajan-orange);
+    text-decoration: underline;
+}
+:root {
+    --light-bg: #F9F9F9;
+    --text-dark: #333;
+}
+
+/* 1. Kontainer Utama Flavor Section */
+.flavor-selection {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background-color: var(--light-bg); 
+}
+
+/* 2. Header (Kotak Putih untuk Judul) */
+.flavor-header {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); /* Bayangan di atas */
+    margin-bottom: 0;
+}
+
+.flavor-header .section-title {
+    font-size: 1.2em; /* Ukuran font lebih kecil dari "Our Menu" */
+    font-weight: 500;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* 3. Wrapper Grid (Menampung Pilihan Rasa) */
+.flavor-grid-wrapper {
+    background-color: white;
+    padding: 20px;
+    padding-top: 10px; /* Sedikit overlap dengan header */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan di bawah */
+}
+
+.flavor-grid {
+    display: grid;
+    /* Membuat 5 kolom yang sama lebarnya */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    gap: 15px;
+    justify-items: center;
+}
+
+/* 4. Opsi Rasa Individu (Card) */
+.flavor-option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    background-color: white;
+    padding: 10px;
+    border-radius: 90px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.flavor-option:hover {
+    background-color: #f0f0f0;
+}
+
+.flavor-option img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.flavor-option p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+.download-app-section {
+    background-color: rgb(255, 255, 255);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    /* Ganti 'food-pattern.png' dengan gambar pattern Anda */
+    background-image: url('img/reg.jpg'); 
+    background-repeat: repeat;
+    background-size: 200px;
+    /* Background abu-abu muda di sekitar pattern */
+    background-color: #ffffff; 
+}
+.download-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--rajan-orange);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.app-buttons { display: flex; justify-content: center; gap: 15px; }
+.app-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 500;
+    background-color: grey;
+    color: white;
+}
+.app-btn:hover {
+    transform: scale(1.07);
+    background-color: var(--rajan-orange);
+    box-shadow: 0 4px 12px rgba(255,140,0,0.4);
+    transition: 0.3s ease;
+}
+
+.app-btn i { font-size: 1.2em; margin-right: 8px; }
+.app-btn:hover i {
+    transform: translateX(3px);
+    transition: 0.3s ease;
+}
+
+
+/* FOOTER */
+.footer-rajan { background-color: var(--dark-footer); color: white; }
+.register-promo { 
+    padding: 40px 0;
+    text-align: center;
+    /* Latar belakang Register Promo */
+    background-image: url('img/reg-1.jpg'); /* Ganti dengan gambar blur Register Anda */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.register-promo::before { /* OVERLAY GELAP UNTUK REGISTER */
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: var(--dark-blue-overlay); 
+    z-index: 1; 
+}
+
+.register-promo * {
+    position: relative;
+    z-index: 2;
+}
+
+.register-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 60px 20px;
+}
+
+.register-title { font-size: 1.5em; margin: 0 0 10px 0; font-weight: 700; color: white; }
+.register-subtitle { font-size: 0.9em; margin: 0 0 20px 0; color: #ccc; }
+.register-subtitle:hover {
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.register-subtitle span { font-weight: 500; color: rgb(255, 145, 2); }
+.register-btn {
+    background-color: var(--rajan-orange);
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background-color: #e57e00; /* Oranye lebih gelap */
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.footer-details-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    border-top: 1px solid var(--medium-footer); /* Garis pemisah di footer */
+}
+.footer-brand { font-weight: bold; color: var(--rajan-orange); }
+.footer-links a { color: #000000; text-decoration: none; margin-right: 20px; }
+.footer-social-icons { display: flex; gap: 10px; }
+.social-icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--medium-footer);
+    color: #ccc;
+    cursor: pointer;
+}
+.social-icon-circle:hover {
+    background-color: var(--rajan-orange);
+    color: white;
+    transform: scale(1.15);
+    transition: 0.3s ease;
+}
+
+:root {
+    --rajan-orange: #FF8C00;
+    --dark-footer: #303030; /* Warna latar belakang Footer utama (hampir hitam) */
+    --medium-footer: #424242;
+    --dark-blue-overlay: rgba(0, 0, 0, 0.4); 
+}
+
+
+
+
+
+.footer-rajan { 
+    background-color: var(--dark-footer); 
+    color: white; 
+    padding: 40px 0; /* Padding keseluruhan Footer */
+    text-align: center;
+}
+
+.footer-details-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Menghapus Flexbox lama untuk layout ikon di tengah */
+    display: block; 
+}
+
+.footer-brand { 
+    font-size: 1.5em;
+    font-weight: bold; 
+    color: var(--rajan-orange); 
+    display: block;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-links a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px;
+    font-size: 0.95em;
+}
+
+.footer-links a:hover {
+    color: var(--rajan-orange);
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
+
+.footer-social-icons { 
+    display: flex; 
+    justify-content: center; /* Memposisikan ikon di tengah */
+    gap: 15px; 
+}
+
+.social-icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Ukuran lingkaran ikon lebih besar */
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--medium-footer);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.social-icon-circle:hover {
+    background-color: var(--rajan-orange);
+}
+
+/* ========== AUTH PAGES (Login & Register) ========== */
+.auth-body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(120deg, #fff5eb 0%, #ffe1c0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.auth-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--rajan-orange);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+}
+
+.auth-card__intro h1 {
+    margin: 10px 0 15px;
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+.auth-card__intro p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.auth-tagline {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--rajan-orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    color: #444;
+}
+
+.auth-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.auth-benefits i {
+    color: #2ecc71;
+}
+
+.auth-form {
+    background: #fff8f0;
+    border-radius: 14px;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.form-heading h2 {
+    margin: 0;
+    color: var(--text-dark);
+}
+
+.form-heading p {
+    margin: 4px 0 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.form-heading a,
+.auth-form a {
+    color: var(--rajan-orange);
+    text-decoration: none;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.auth-form label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="tel"],
+.auth-form input[type="password"] {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: var(--rajan-orange);
+    box-shadow: 0 0 0 3px rgba(255,140,0,0.15);
+}
+
+.checkbox-label {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 6px;
+}
+
+.auth-submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: var(--rajan-orange);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255,140,0,0.25);
+}
+
+.auth-footer-note {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.form-actions-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+.link-muted {
+    color: #777;
+    text-decoration: none;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0 15px;
+    color: #888;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-divider span {
+    flex: 1;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+}
+
+.social-login-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.social-login-buttons button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.social-login-buttons button:hover {
+    border-color: var(--rajan-orange);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.auth-highlight {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    background: rgba(255, 140, 0, 0.1);
+    padding: 18px;
+    border-radius: 14px;
+    margin-top: 20px;
+    border: 1px dashed rgba(255, 140, 0, 0.4);
+}
+
+.auth-highlight i {
+    font-size: 1.3rem;
+    color: var(--rajan-orange);
+}
+
+@media (max-width: 768px) {
+    .auth-card {
+        padding: 25px;
+    }
+    .auth-form {
+        padding: 20px;
+    }
+}
+
+/* ========== CONTACT PAGE ========== */
+.contact-hero {
+    background: linear-gradient(135deg, #ffeddc, #ffe4c2);
+    padding: 70px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-hero__content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.contact-hero h1 {
+    font-size: 2.4rem;
+    margin: 10px 0;
+    color: var(--text-dark);
+}
+
+.contact-hero p {
+    color: #5b5b5b;
+    line-height: 1.6;
+}
+
+.contact-label {
+    color: var(--rajan-orange);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-form-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.contact-form__wrapper {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 140, 0, 0.15);
+}
+
+.contact-form__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #555;
+    gap: 6px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    outline: none;
+    border-color: var(--rajan-orange);
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.15);
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-input select {
+    max-width: 120px;
+}
+
+.contact-submit-btn {
+    background: var(--rajan-orange);
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 12px 30px rgba(255, 140, 0, 0.3);
+}
+
+.contact-submit-btn:hover {
+    background-color: #e57e00;
+}
+
+.contact-info-strip {
+    background: #111c2e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-info-strip h3 {
+    margin-bottom: 8px;
+    color: #ffd5a1;
+}
+
+.contact-download {
+    margin-top: 0;
+}
+
+.contact-register {
+    margin-top: 0;
+}
+
+.footer-note {
+    margin-top: 20px;
+    color: #bbb;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    .contact-form__wrapper {
+        padding: 20px;
+    }
+    .phone-input {
+        flex-direction: column;
+    }
+}

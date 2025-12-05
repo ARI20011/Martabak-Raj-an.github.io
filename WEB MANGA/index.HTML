@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Reader</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="typing-animation-container">
+            <div class="typing-text">
+                <span class="static-text">Welcome to</span>
+                <span class="dynamic-text-wrapper">
+                    <span class="dynamic-text"></span>
+                    <span class="cursor">|</span>
+                </span>
+            </div>
+            <div class="subtitle">Baca manga favoritmu kapan saja dan di mana saja</div>
+        </div>
+
+        <header>
+            <div class="logo-section">
+                <i class="fas fa-book-reader logo-icon"></i>
+                <h1>Manga Reader</h1>
+            </div>
+            <nav>
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Cari manga favorit kamu...">
+                </div>
+                <div class="nav-buttons">
+                    <button id="homeBtn" class="nav-btn">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </button>
+                    <button id="bookmarksBtn" class="nav-btn">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </button>
+                    <button id="darkModeBtn" class="nav-btn">
+                        <i class="fas fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="categories-section">
+                <h2>Kategori Populer</h2>
+                <div class="category-tags">
+                    <span class="category-tag">Action</span>
+                    <span class="category-tag">Adventure</span>
+                    <span class="category-tag">Comedy</span>
+                    <span class="category-tag">Drama</span>
+                    <span class="category-tag">Fantasy</span>
+                    <span class="category-tag">Romance</span>
+                </div>
+            </div>
+
+            <div class="manga-section">
+                <div class="section-header">
+                    <h2>Manga Terbaru</h2>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="manga-grid" id="mangaGrid">
+                    <!-- Manga cards will be inserted here -->
+                </div>
+            </div>
+
+            <div class="manga-viewer" id="mangaViewer" style="display: none;">
+                <div class="viewer-header">
+                    <button class="back-btn" onclick="showHome()">
+                        <i class="fas fa-arrow-left"></i> Kembali
+                    </button>
+                    <h2 id="mangaTitle"></h2>
+                    <button class="bookmark-btn" id="bookmarkBtn">
+                        <i class="far fa-bookmark"></i>
+                    </button>
+                </div>
+                <div class="chapter-selector">
+                    <select id="chapterSelect">
+                        <option value="">Pilih Chapter</option>
+                    </select>
+                </div>
+                <div class="viewer-controls">
+                    <button id="prevPage" class="control-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <span id="pageInfo">Page 1</span>
+                    <button id="nextPage" class="control-btn">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="image-container">
+                    <img id="mangaPage" src="" alt="Manga page">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Manga Reader</h3>
+                    <p>Baca manga favoritmu kapan saja dan di mana saja.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Popular Manga</a></li>
+                        <li><a href="#">Latest Updates</a></li>
+                        <li><a href="#">Genres</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Manga Reader. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading"></div>
+        <p>Loading...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
